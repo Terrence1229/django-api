@@ -3,6 +3,8 @@ from datetime import datetime
 
 from django.http import HttpResponse
 
+from .gmail import MAPIView
+
 def index(request):
     now = datetime.now()
     html = f'''
@@ -14,3 +16,6 @@ def index(request):
     </html>
     '''
     return HttpResponse(html)
+
+def test(request):
+    return MAPIView.google_auth(request)
