@@ -11,7 +11,7 @@ from django.shortcuts import redirect, render
 # Global variables
 CREDENTIALS_FILE = os.path.join(os.path.dirname(__file__), '../credentials.json')
 SCOPES = ['https://www.googleapis.com/auth/gmail.readonly', 'https://www.googleapis.com/auth/gmail.modify']
-REDIRECT_URI = 'https://django-api-inky.vercel.app/authcallback'
+REDIRECT_URI = 'https://aaron.1201.pro/authcallback'
 PICKLE_FILE = os.path.join(os.path.dirname(__file__), 'token.pickle')
 # Create your views here.
 
